@@ -4,6 +4,9 @@
   "private": true,
   "dependencies": {
     "@hookform/resolvers": "~2.8.0",
+    "@mdi/font": "^6.6.96",
+    "@mdi/js": "^6.6.96",
+    "@mdi/react": "^1.5.0",
     "@sentry/react": "^6.17.9",
     "@sentry/tracing": "^6.17.9",
     "axios": "~0.21.2",
