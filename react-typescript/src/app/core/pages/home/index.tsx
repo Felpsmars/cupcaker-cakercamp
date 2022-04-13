@@ -3,7 +3,7 @@ import React from 'react'
 import moment from 'moment'
 import 'moment/locale/pt-br'
 
-import { HomeNews } from 'components/molecules'
+import { Carousel } from 'components/molecules'
 
 moment.locale('pt-br')
 
@@ -12,15 +12,10 @@ moment.locale('pt-br')
 const Home = (): JSX.Element => {
   return (
     <main>
-      <HomeNews
-        author="Billy Butcher,"
-        title="Title: Lorem Ipsum Lorem Ips"
-        description="Description: Lorem Ipsum Lorem "
-        comments="44"
-        label="PS4"
-        stylesTag="PS4"
-        time={'2022-04-06T09:00:46.272Z'}
-        srcIMG="https://static.gamevicio.com/imagens_up/big/71/sonic-the-hedgehog-2-gerou-us-25-5-milhoes-em-seu-final-de-semana-internacional-070121.jpg"
+      <Carousel
+        title="title"
+        description="description"
+        img="https://static.gamevicio.com/imagens_up/big/71/kingdom-hearts-iv-apartamento-de-sora-existe-na-vida-real-e-custa-1-2-milhao-de-dolares-070420.jpg"
       />
     </main>
   )
