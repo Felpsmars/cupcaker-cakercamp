@@ -1,0 +1,83 @@
+.container {
+  display: flex;
+  height: 15rem;
+  max-width: 60rem;
+  border-bottom: 0.2rem solid #e53834;
+  position: relative;
+
+  &:hover {
+    .img_container {
+      img {
+        transition: 0.4s;
+        transform: scale(105%);
+      }
+    }
+  }
+
+  h3 {
+    padding-left: 1rem;
+    margin-top: 0.1rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+
+  p {
+    margin-top: 0.1rem;
+    padding-left: 1rem;
+
+    font-size: 1.1rem;
+  }
+
+  .details {
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    padding: 1rem;
+  }
+
+  .img_container {
+    overflow: hidden;
+    width: auto;
+    width: 40%;
+
+    img {
+      height: 100%;
+      width: 100%;
+      transition: 0.4s;
+
+      &:hover {
+        transform: scale(105%);
+      }
+    }
+
+    .label_games {
+      position: absolute;
+      top: 85%;
+      left: 0.5rem;
+    }
+    &:hover {
+      .label_games div {
+        background-color: #e53934;
+
+        transition: 0.4s;
+      }
+    }
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 60%;
+}
+
+.bottom_content {
+  display: flex;
+  height: 22%;
+  width: 35rem;
+
+  justify-content: space-between;
+}
