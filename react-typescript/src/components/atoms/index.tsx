@@ -1,0 +1,6 @@
+export * from './typography'
+export * from './tag'
+export * from './labelGames'
+export * from './storiesComponent'
+export * from './header'
+export * from './footer'
