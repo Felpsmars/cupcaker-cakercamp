@@ -47,25 +47,21 @@ const HomeNews = ({ news }: IHomeNewsProps): JSX.Element => {
           </div>
           <div className={styles.content}>
             <div className={styles.upper_content}>
-              <div className={styles.title}>
-                <h3>{eachNews.title}</h3>
-              </div>
-              <div className={styles.description}>
-                <p>{eachNews.description}</p>
-              </div>
+              <h3 className={styles.title}>{eachNews.title}</h3>
+              <p className={styles.description}>{eachNews.description}</p>
             </div>
-            <div className={styles.bottom_content}>
-              <div className={styles.details}>
-                {eachNews.tags.map(eachTag => (
-                  <Tag type={eachTag} />
-                ))}
-                <span>
-                  Por <strong>{eachNews.author}</strong>{' '}
-                  {convertTime(eachNews.createdAt)}
-                </span>
+            <div className={styles.details}>
+              {eachNews.tags.map(eachTag => (
+                <Tag type={eachTag} />
+              ))}
+              <span>
+                Por <strong>{eachNews.author}</strong>{' '}
+                {convertTime(eachNews.createdAt)}
+              </span>
+              <div className={styles.comments}>
+                <p>{eachNews.comments}</p>
+                <Icon path={mdiComment} size={0.5} />
               </div>
-              <p>{eachNews.comments}</p>
-              <Icon path={mdiComment} size={0.5} />
             </div>
           </div>
         </div>
