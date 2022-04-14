@@ -1,15 +1,30 @@
+.main_container {
+  display: flex;
+  width: 80%;
+}
+
 .container {
   display: flex;
   text-align: center;
-  align-items: center;
+
+  &:hover {
+    .stories {
+      transition: 0.3s;
+      transform: scale(1.2);
+    }
+  }
 }
 
 .card {
+  display: flex;
   padding: 0.7rem;
+  align-items: center;
+  flex-direction: column;
 }
 
 .stories_container {
   display: flex;
+
   width: 7rem;
   height: 7rem;
 

@@ -1,5 +1,5 @@
 .swiper {
-  width: 35rem;
+  width: 50rem;
   height: 25rem;
 }
 
@@ -29,8 +29,8 @@
   position: relative;
   transition: 0.4s;
 
-  right: 14.5rem;
-  bottom: 5rem;
+  right: 21rem;
+  bottom: 4.5rem;
 }
 
 .swiper-slide img {
@@ -50,14 +50,14 @@
 .title {
   position: relative;
   text-align: left;
-  top: 150px;
+  top: 130px;
   font-size: 1.5rem;
 }
 
 .description {
   position: relative;
   text-align: left;
-  top: 130px;
+  top: 115px;
   font-size: 1rem;
 }
 

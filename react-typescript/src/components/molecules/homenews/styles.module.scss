@@ -2,6 +2,7 @@
   display: flex;
   height: 15rem;
   max-width: 60rem;
+  margin-bottom: 1rem;
   border-bottom: 0.2rem solid #e53834;
   position: relative;
 
@@ -80,4 +81,5 @@
   width: 35rem;
 
   justify-content: space-between;
+  align-items: center;
 }
