@@ -3,19 +3,26 @@ import React from 'react'
 import styles from './styles.module.scss'
 
 interface ILabel {
-  label: string
-  img: string
+  stories: {
+    title: string
+    image: string
+    id: string
+  }[]
 }
 
-const Stories = (props: ILabel): JSX.Element => {
+const Stories = ({ stories }: ILabel): JSX.Element => {
   return (
-    <div className={styles.container}>
-      <div className={styles.card}>
-        <div className={styles.stories_container}>
-          <img src={props.img} className={styles.stories} />
+    <div className={styles.main_container}>
+      {stories.map(storie => (
+        <div key={storie.id} className={styles.container}>
+          <div className={styles.card}>
+            <div className={styles.stories_container}>
+              <img src={storie.image} className={styles.stories} />
+            </div>
+            <p>{storie.title}</p>
+          </div>
         </div>
-        <p>{props.label}</p>
-      </div>
+      ))}
     </div>
   )
 }
